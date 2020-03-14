@@ -37,6 +37,7 @@ def split(fname, file_size, fnumber):
         a.close()
 
 
+# 合并小文件
 def combine(new_name, total_pack):
     new_file = open(new_name, 'ab')
     i = 1
@@ -49,7 +50,7 @@ def combine(new_name, total_pack):
 
 
 if __name__ == "__main__":
-    pic2base("C:\\Users\\cblph\\Desktop\\399996.png")
+    pic2base("C:\\Desktop\\399996.png")
     fname = '1.txt'  # default为1.txt
     file_size = 10240*50  # 字节数，10240为10kb
     fnumber = os.path.getsize(fname) // file_size + 1  # 分块后的文件数量
