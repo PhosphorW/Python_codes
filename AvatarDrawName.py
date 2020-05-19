@@ -53,8 +53,8 @@ def draw_text(image, fillColor, position, chars, setfont, draw):
 ascll_alpnum = list(range(0, 127))
 
 img = Image.open("C:\\Users\\cblph\\Desktop\\001.jpg")
-chName = ""
-enName = ""
+chName = "永井マリア"
+enName = "Maria Nagai"
 white = (255, 255, 255)
 black = (0, 0, 0)
 
@@ -65,5 +65,6 @@ font2 = ImageFont.truetype('C:\\Windows\\Fonts\\STSONG.TTF', 28)
 draw_text(img, white, (5, 10), chName, font1, draw)
 draw_text(img, white, (45, 19), enName, font2, draw)
 # img.show()
-saveName = "C:\\Users\\cblph\\Desktop\\" + chName + '-0' + str(random.randint(1, 9)) + "-venuseo.jpg"
+# saveName = "C:\\Users\\cblph\\Desktop\\" + chName + '-0' + str(random.randint(1, 9)) + "-venuseo.jpg"
+saveName = "C:\\Users\\cblph\\Desktop\\" + chName + "-1-venuseo.jpg"
 img.save(saveName)
